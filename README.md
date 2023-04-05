@@ -25,7 +25,7 @@ Print the original and equalized image using cv2.imshow() and end the program.
 ```
 # Developed By: Sanjay S
 # Register Number: 212221230086
-
+```
 # Write your code to find the histogram of gray scale image and color image channels.
 ```
 import cv2
