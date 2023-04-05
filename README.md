@@ -30,7 +30,7 @@ Print the original and equalized image using cv2.imshow() and end the program.
 ```
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("gray.jpg")
+gray_image = cv2.imread("outer1.png")
 clr_image = cv2.imread("color.jpg",-1)
 cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",clr_image)
@@ -42,7 +42,7 @@ cv2.destroyAllWindows()
 ```
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("gray.jpg")
+gray_image = cv2.imread("outer1.png")
 clr_image = cv2.imread("color.jpg",-1)
 gray_hist = cv2.calcHist([gray_image],[0],None,[256],[0,256])
 clr_hist = cv2.calcHist([clr_image],[0],None,[256],[0,256])
@@ -68,7 +68,7 @@ plt.show()
 ```
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("gray.jpg",0)
+gray_image = cv2.imread("outer1.png",0)
 cv2.imshow("Gray Image",gray_image)
 equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
